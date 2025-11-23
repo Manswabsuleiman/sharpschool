@@ -110,7 +110,7 @@ const CONSUMER_KEY = process.env.PESAPAL_KEY || "qkio1BGGYAXTu2JOfm7XSXNruoZsrqE
 const CONSUMER_SECRET = process.env.PESAPAL_SECRET || "osGQ364R49cXKeOYSpaOnT++rHs=";
 const CALLBACK_URL = process.env.PESAPAL_CALLBACK || "https://sch-flvw.onrender.com/api/pesapal/callback";
 
-const IPN_ID = "96711feb-fece-44c1-a340-db0ffcf0e906";
+const IPN_ID = "dce2c8a0-9cfa-4a6d-9f56-db0e6018eeaf";
 
 const PESAPAL_BASE_URL = "https://cybqa.pesapal.com/pesapalv3";
 const AUTH_ENDPOINT = `${PESAPAL_BASE_URL}/api/Auth/RequestToken`;
