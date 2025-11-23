@@ -1,0 +1,88 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+/* Hero container */
+.homepage-hero {
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  background-image: url('./Pictures/Student.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  margin-top: 100px;
+  filter: blur(-1px);
+  align-items: center;
+  justify-content: center;
+
+    filter: brightness(0.65); /* 0 = black, 1 = original, 0.6 = darker */
+
+
+  /* Fade-in animation */
+  opacity: 0;
+  animation: fadeInHero 1.5s forwards;
+}
+
+/* Overlay text container */
+.overlay-text {
+  position: relative;
+  z-index: 2;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 0 20px;
+  text-shadow: 0 4px 10px rgba(0, 8, 255, 0.3); /* subtle shadow */
+  opacity: 0;
+  animation: fadeInText 2s forwards 0.5s; /* fade-in */
+  line-height: 1.2;
+}
+
+/* First two words fully white */
+.overlay-text .white-text {
+  color: white;
+}
+
+/* Gradient text for remaining */
+.overlay-text .gradient-text {
+  background: linear-gradient(90deg, #ffffff, #0c09d6); /* white → blue */
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+/* Animations */
+@keyframes fadeInHero {
+  to { opacity: 1; }
+}
+
+@keyframes fadeInText {
+  to { opacity: 1; }
+}
+
+/* Responsive text */
+@media (max-width: 768px) {
+  .overlay-text {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .overlay-text {
+    font-size: 1.4rem;
+  }
+  .homepage-hero{
+    margin-top: 45%;
+  }
+}
