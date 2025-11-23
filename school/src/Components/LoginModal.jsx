@@ -20,7 +20,7 @@ const LoginModal = ({ open, onClose, setParent }) => {
     setLoading(true);
     try {
       if (role === "parent") {
-        const res = await axios.post("http://localhost:8000/parent/login", {
+        const res = await axios.post("https://sch-flvw.onrender.com/parent/login", {
           username: email,
           password,
         });
