@@ -101,7 +101,7 @@ const Payments = () => {
         description: `School fees for ${formData.studentName}, Grade ${formData.grade}`,
       };
 
-      const response = await fetch("http://localhost:8000/api/pesapal/initiate", {
+      const response = await fetch("https://sch-flvw.onrender.com/api/pesapal/initiate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(requestBody),
