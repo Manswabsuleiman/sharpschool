@@ -108,7 +108,7 @@ app.post("/parent/logout", (req, res) => {
 // =========================
 const CONSUMER_KEY = process.env.PESAPAL_KEY || "qkio1BGGYAXTu2JOfm7XSXNruoZsrqEW";
 const CONSUMER_SECRET = process.env.PESAPAL_SECRET || "osGQ364R49cXKeOYSpaOnT++rHs=";
-const CALLBACK_URL = process.env.PESAPAL_CALLBACK || "https://proarmy-tammara-thermogenic.ngrok-free.dev/api/pesapal/callback";
+const CALLBACK_URL = process.env.PESAPAL_CALLBACK || "https://sch-flvw.onrender.com/api/pesapal/callback";
 
 const IPN_ID = "96711feb-fece-44c1-a340-db0ffcf0e906";
 
